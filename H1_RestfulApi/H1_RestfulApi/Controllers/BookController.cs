@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace H1_RestfulApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class BookController : ControllerBase
     {
@@ -25,6 +25,20 @@ namespace H1_RestfulApi.Controllers
             return Ok(_books);
         }
 
+        [HttpGet]
+        public IActionResult GetBookName([FromQuery]string name)
+        {
+            IEnumerable<Book> books = _books;
+
+            if (!string.IsNullOrEmpty(name))
+                books = books.Where(b => b.Name.Contains(name, System.StringComparison.OrdinalIgnoreCase));
+            
+            if(books ==  null)
+                return NotFound();
+
+            return Ok(books);
+        }
+
         // GetById - GET api/<BookController>/5
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
@@ -39,7 +53,7 @@ namespace H1_RestfulApi.Controllers
 
         // POST api/<BookController>
         [HttpPost]
-        public IActionResult Post([FromBody] Book book)
+        public IActionResult CreateBook([FromBody] Book book)
         {
             if (book == null)
                 return BadRequest();
@@ -55,7 +69,7 @@ namespace H1_RestfulApi.Controllers
 
         // PUT api/<BookController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Book book)
+        public IActionResult UpdateBook(int id, [FromBody] Book book)
         {
             if(book == null)
                 return BadRequest();
@@ -73,7 +87,7 @@ namespace H1_RestfulApi.Controllers
 
         // DELETE api/<BookController>/5
         [HttpDelete]
-        public IActionResult Delete([FromQuery] int id)
+        public IActionResult DeleteBook([FromQuery] int id)
         {
             Book newBook = _books.FirstOrDefault(b => b.Id == id);
 
