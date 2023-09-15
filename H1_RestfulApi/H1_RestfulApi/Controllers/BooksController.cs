@@ -9,7 +9,7 @@ namespace H1_RestfulApi.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class BooksController : ControllerBase
     {
         private static List<Book> _books = new List<Book>
         {
@@ -25,6 +25,7 @@ namespace H1_RestfulApi.Controllers
             return Ok(_books);
         }
 
+        // GetBookName - GET: filter and sort products by name
         [HttpGet]
         public IActionResult GetBookName([FromQuery]string name)
         {
