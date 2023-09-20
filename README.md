@@ -45,7 +45,7 @@
 
 <h4>API Enpoint</h4>
 
-- To get a specific book by ID: `GET /api/books/getbyid/{id}`
+- To get a specific book by ID: `GET /books/{id}`
 
 <p>
    In the screenshot below, according to the request created with the above API Endpoint by giving the wrong ID in the GetBooks process with the Specific ID; There is a Status Code returned in the response and a Validation Failed error returned in the response body.
