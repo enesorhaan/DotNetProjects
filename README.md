@@ -38,5 +38,22 @@
 
 ![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/615bd2db-04c7-4a2c-a2d2-0b0acf4adc0c)
 
+<h2>H4_FluentValidation</h2>
+<p>
+  In this solution, Fluent Validation has been applied to the Models in <a href = "https://github.com/enesorhaan/DotNetProjects/tree/main/H3_ModelUsing/BookStore">H3_ModelUsing/BookStore</a>
+</p>
+
+<h4>API Enpoint</h4>
+
+- To get a specific book by ID: `GET /books/{id}`
+
+<p>
+   In the screenshot below, according to the request created with the above API Endpoint by giving the wrong ID in the GetBooks process with the Specific ID; There is a Status Code returned in the response and a Validation Failed error returned in the response body.
+</p>
+
+
+![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/a65309e4-36e4-4ccb-97bd-da54dc250d69)
+
+
 
 
