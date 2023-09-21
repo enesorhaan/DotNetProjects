@@ -1,6 +1,6 @@
-<h1 href="https://github.com/enesorhaan/DotNetProjects/tree/main/H1_RestfulApi">DotNet Projects</h1>
+<h1>DotNet Projects</h1>
 
-<h2>H1_RestfulApi</h2>
+<h2 href="https://github.com/enesorhaan/DotNetProjects/tree/main/H1_RestfulApi">H1_RestfulApi</h2>
 <p>
   This project provides a RESTful API that can be used to perform basic operations such as adding, updating, listing and deleting products. <br/>
   It also includes the ability to list and sort products. <br/>
