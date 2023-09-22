@@ -18,7 +18,22 @@
 
 ![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/9ffd4561-4fee-40d8-a80f-1169e5cdcfe5)
 
-<h2>H2 Solution</h2>
+<h2>H2_DIandMiddleware</h2>
+<p>
+  In this solution, custom middleware and Dependency Injection were created for the solution in <a href="https://github.com/enesorhaan/DotNetProjects/tree/main/H1_RestfulApi">H1_RestfulApi</a>
+  Below are the API endpoints and screenshot of the output in the Console for Dependency Injection and the incoming Request.
+</p>
+
+<h4>API Endpoints</h4>
+
+- To list all books:  `GET /api/books/getbooks`
+- To filter and sort books by name: `GET /api/Books/GetBookName?name={name}`
+- To get a specific book by ID: `GET /api/books/getbyid/{id}`
+- To add a new book: `POST /api/books/createbook`
+- To update a book: `PUT /api/books/updatebook/{id}`
+- To delete a book: `DELETE /api/books/deletebook?id={id}`
+
+![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/244bbeb3-877b-4b75-8aa1-f3ec80a3e1cb)
 
 
 <h2>H3_ModelUsing/BookStore</h2>
@@ -43,7 +58,7 @@
   In this solution, Fluent Validation has been applied to the Models in <a href = "https://github.com/enesorhaan/DotNetProjects/tree/main/H3_ModelUsing/BookStore">H3_ModelUsing/BookStore</a>
 </p>
 
-<h4>API Enpoint</h4>
+<h4>API Endpoint</h4>
 
 - To get a specific book by ID: `GET /books/{id}`
 
