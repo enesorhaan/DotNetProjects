@@ -69,6 +69,21 @@
 
 ![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/a65309e4-36e4-4ccb-97bd-da54dc250d69)
 
+<h2>H5_GenreController</h2>
+<p>
+  In this solution, entity, controllers, various validation and mapper operations belonging to the Book Genre for the project in <a href="https://github.com/enesorhaan/DotNetProjects/tree/main/H4_FluentValidation/BookStore">H4_FluentValidation</a> were created. <br/>
+  Below are the API endpoints and screenshot.
+</p>
+
+<h4>API Endpoints</h4>
+
+- To list all book genres:  `GET /genres`
+- To get a specific book genre by ID: `GET /genres/{id}`
+- To add a new book genre: `POST /genres`
+- To update a book genre: `PUT /genres/{id}`
+- To delete a book genre: `DELETE /genres/{id}`
+
+![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/f76ce3b0-0539-4277-9db8-07a3dbea2fdb)
 
 
 
