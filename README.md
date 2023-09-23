@@ -77,13 +77,28 @@
 
 <h4>API Endpoints</h4>
 
-- To list all book genres:  `GET /genres`
-- To get a specific book genre by ID: `GET /genres/{id}`
-- To add a new book genre: `POST /genres`
-- To update a book genre: `PUT /genres/{id}`
-- To delete a book genre: `DELETE /genres/{id}`
+- To list all genres:  `GET /genres`
+- To get a specific genre by ID: `GET /genres/{id}`
+- To add a new genre: `POST /genres`
+- To update a genre: `PUT /genres/{id}`
+- To delete a genre: `DELETE /genres/{id}`
 
 ![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/f76ce3b0-0539-4277-9db8-07a3dbea2fdb)
 
+<h2>AuthorController</h2>
+<p>
+  In this solution, entity, controllers, various validation and mapper operations belonging to the Book Author for the project in <a href="https://github.com/enesorhaan/DotNetProjects/tree/main/H5_GenreController/BookStore">H5_GenreController</a> were created. <br/>
+  Below are the API endpoints and screenshot.
+</p>
+
+<h4>API Endpoints</h4>
+
+- To list all authors:  `GET /authors`
+- To get a specific author by ID: `GET /authors/{id}`
+- To add a new author: `POST /authors`
+- To update a author: `PUT /authors/{id}`
+- To delete a author: `DELETE /authors/{id}`
+
+![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/5217f2cb-451d-468c-8171-84ea19f35cba)
 
 
