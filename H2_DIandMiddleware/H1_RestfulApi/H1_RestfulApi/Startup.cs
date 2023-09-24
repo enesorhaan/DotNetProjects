@@ -1,4 +1,5 @@
 using FluentValidation.AspNetCore;
+using H1_RestfulApi.Extensions;
 using H1_RestfulApi.Middlewares;
 using H1_RestfulApi.Services;
 using Microsoft.AspNetCore.Builder;
@@ -36,7 +37,7 @@ namespace H1_RestfulApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "H1_RestfulApi", Version = "v1" });
             });
 
-            services.AddSingleton<ILoggerService, ConsoleLogger>();
+            services.AddLogger(); // Using extension method for singleton --- services.AddSingleton<ILoggerService, ConsoleLogger>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
