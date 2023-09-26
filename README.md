@@ -21,7 +21,8 @@
 <h2>H2_DIandMiddleware</h2>
 <p>
   In this solution, custom middleware and Dependency Injection were created for the solution in <a href="https://github.com/enesorhaan/DotNetProjects/tree/main/H1_RestfulApi">H1_RestfulApi</a>
-  Below are the API endpoints and screenshot of the output in the Console for Dependency Injection and the incoming Request.
+  Below are the API endpoints and screenshot of the output in the Console for Dependency Injection and the incoming Request. <br/>
+  Additionally, Extension Method was used for Singleton.
 </p>
 
 <h4>API Endpoints</h4>
