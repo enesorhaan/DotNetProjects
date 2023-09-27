@@ -86,7 +86,7 @@
 
 ![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/f76ce3b0-0539-4277-9db8-07a3dbea2fdb)
 
-<h2>AuthorController</h2>
+<h2>H6_AuthorController</h2>
 <p>
   In this solution, entity, controllers, various validation and mapper operations belonging to the Book Author for the project in <a href="https://github.com/enesorhaan/DotNetProjects/tree/main/H5_GenreController/BookStore">H5_GenreController</a> were created. <br/>
   Below are the API endpoints and screenshot.
@@ -101,5 +101,21 @@
 - To delete a author: `DELETE /authors/{id}`
 
 ![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/5217f2cb-451d-468c-8171-84ea19f35cba)
+
+
+<h2>H7_UnitTest</h2>
+<p>
+  In this solution, Unit Tests were written for the BookStore project in <a href="https://github.com/enesorhaan/DotNetProjects/tree/main/H6_AuthorController/BookStore">H6_AuthorController</a>. <br/>
+</p>
+
+<h3><a href="https://en.wikipedia.org/wiki/Unit_testing">What is Unit Test?</a></h3>
+
+> Unit testing is a software development process in which the smallest testable parts of an application,
+> called units, are individually scrutinized for proper operation.
+
+The file structure created according to commands and requests has been preserved, and a Unit Test has been written for each method used. <br/>
+__.NET Core Test Explorer__ Extension was used to view and test the tests together. The file structure and extension content are below.
+
+![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/37207e40-9a52-479f-878f-96a7802a66c1)
 
 
