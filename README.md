@@ -1,5 +1,18 @@
 <h1>DotNet Projects</h1>
 
+<h2>H8_MovieStore</h2>
+
+<p>
+  In this solution, Movie Store API was created and the following technologies were used.
+</p>
+
+1. Used ViewModel and Dto using CQRS principle. Objects were transformed into each other with the Automapper library.
+2. All validations were created with the FluentValidation library.
+3. Exception and Logging infrastructure is written with custom middleware.
+4. Dependency within the project is minimized. Dependencies were managed from a single point by using DI Container and Dependency Injection at necessary points.
+5. A basic level Authentication and Authorization structure was implemented in the project with JwtBearer. Endpoints are authorized only by the Customer Endpoint.
+6. The tests of the project were written with Unit Test.
+
 <h2>H1_RestfulApi</h2>
 <p>
   This project provides a RESTful API that can be used to perform basic operations such as adding, updating, listing and deleting products. <br/>
