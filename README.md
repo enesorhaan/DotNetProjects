@@ -6,12 +6,29 @@
   In this solution, Movie Store API was created and the following technologies were used.
 </p>
 
-1. Used ViewModel and Dto using CQRS principle. Objects were transformed into each other with the Automapper library.
-2. All validations were created with the FluentValidation library.
-3. Exception and Logging infrastructure is written with custom middleware.
-4. Dependency within the project is minimized. Dependencies were managed from a single point by using DI Container and Dependency Injection at necessary points.
-5. A basic level Authentication and Authorization structure was implemented in the project with JwtBearer. Endpoints are authorized only by the Customer Endpoint.
-6. The tests of the project were written with Unit Test.
+1. Used ViewModel and Dto using **CQRS** principle. Objects were transformed into each other with the Automapper library.
+2. All validations were created with the **FluentValidation** library.
+3. Exception and Logging infrastructure is written with custom **Middleware**.
+4. Dependency within the project is minimized. Dependencies were managed from a single point by using DI Container and **Dependency Injection** at necessary points.
+5. A basic level Authentication and Authorization structure was implemented in the project with **JwtBearer**. Endpoints are authorized only by the Customer Endpoint.
+6. The tests of the project were written with **Unit Test**.
+
+<h3>CRUD Operations with Postman</h3>
+
+This section shows CRUD operations for any data in the API (movies, directors, etc.) using Postman.
+
+1. First of all, in order to access any data, a customer record must first be created.
+- API Customer Endpoint:  `POST /customers`
+- The Json Format that should be included in the body part of the request to be sent should be as follows:
+
+```json
+{
+  "name": "Enes",
+  "surName": "Orhan",
+  "email": "enesorhan@hotmail.com",
+  "password": "12345"
+}
+```
 
 <h2>H1_RestfulApi</h2>
 <p>
