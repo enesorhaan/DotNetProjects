@@ -19,7 +19,7 @@ This section shows CRUD operations for any data in the API (movies, directors, e
 
 1. First of all, in order to access any data, a customer record must first be created.
 - API Customer Endpoint:  `POST /customers`
-- The Json Format that should be included in the body part of the request to be sent should be as follows:
+- Sample Json Format that should be included in the body of the request to be sent:
 
 ```json
 {
@@ -27,6 +27,26 @@ This section shows CRUD operations for any data in the API (movies, directors, e
   "surName": "Orhan",
   "email": "enesorhan@hotmail.com",
   "password": "12345"
+}
+```
+
+2. AccessToken is created with the created customer record.
+- Endpoint to use to create AccessToken: `POST /customers/connect/token`
+- Sample Json Format to be sent to provide Authentication with Endpoint:
+
+```json
+{
+  "email": "enesorhan@hotmail.com",
+  "password": "12345"
+}
+```
+
+- Sample Json format in the body as response:
+```json
+{
+    "accesToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2OTU5NDQ2NjgsImV4cCI6MTY5NTk0NTU2OCwiaXNzIjoid3d3LnRlc3QuY29tIiwiYXVkIjoid3d3LnRlc3QuY29tIn0.vBZoAtujJmC8qEpQJEDlg7b14DZJJIex6jlZhL5iCD4",
+    "expiration": "2023-09-29T02:59:28.4987901+03:00",
+    "refreshToken": "0cea5f70-a04a-48df-9b35-663eb36af511"
 }
 ```
 
