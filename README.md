@@ -54,7 +54,11 @@ This section shows CRUD operations for any data in the API (movies, directors, e
 ```
 
 3. The AccessToken obtained in the Response Body is added as a Bearer Token in the Authorization section of the request to be used in CRUD operations.
-   Endpoints of CRUD operations of Actors are as follows.
+Authorization to call GET request on Actors:
+
+![image](https://github.com/enesorhaan/DotNetProjects/assets/59869028/fbc0e2b9-c3ce-4567-b514-3f000b07aa11)
+
+4. Endpoints of CRUD operations of Actors are as follows.
 - To list all actors  : `GET /actors`
 - To add a new actor  : `POST /actors`
 - To update a actor   : `PUT /actors/{id}`
