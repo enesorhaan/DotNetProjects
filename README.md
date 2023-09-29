@@ -17,7 +17,7 @@
 
 This section shows CRUD operations for any data in the API (movies, directors, etc.) using Postman.
 
-1. First of all, in order to access any data, a customer record must first be created.
+**1. First of all, in order to access any data, a customer record must first be created.**
 - API Customer Endpoint:  `POST /customers`
 - Sample Json Format that should be included in the body of the request to be sent:
 
@@ -30,7 +30,7 @@ This section shows CRUD operations for any data in the API (movies, directors, e
 }
 ```
 
-2. AccessToken is created with the created customer record.
+**2. AccessToken is created with the created customer record.**
 - Endpoint to use to create AccessToken: `POST /customers/connect/token`
 - Sample Json Format to be sent to provide Authentication with Endpoint:
 
@@ -49,6 +49,13 @@ This section shows CRUD operations for any data in the API (movies, directors, e
     "refreshToken": "0cea5f70-a04a-48df-9b35-663eb36af511"
 }
 ```
+
+3. The AccessToken obtained in the Response Body is added as a Bearer Token in the Authorization section of the request to be used in CRUD operations.
+   Endpoints of CRUD operations of Actors are as follows.
+- To list all actors  : `GET /actors`
+- To add a new actor  : `POST /actors`
+- To update a actor   : `PUT /actors/{id}`
+- To delete a actor   : `DELETE /actors/{id}`
 
 <h2>H1_RestfulApi</h2>
 <p>
