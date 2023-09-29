@@ -16,6 +16,9 @@
 <h3>CRUD Operations with Postman</h3>
 
 This section shows CRUD operations for any data in the API (movies, directors, etc.) using Postman.
+<p>
+  For Postman Documentation: <a href="https://documenter.getpostman.com/view/29567242/2s9YJaWhxc">Authentication, Authorization and CRUD Operations</a>
+</p>
 
 **1. First of all, in order to access any data, a customer record must first be created.**
 - API Customer Endpoint:  `POST /customers`
